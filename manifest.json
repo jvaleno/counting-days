@@ -1,0 +1,25 @@
+{
+    "name": "Counting days",
+    "version": "1.2",
+    "description": "Counting down the days until the date of your next event/deadline.",
+    "manifest_version": 3,
+    "author": "Jørgen Valen",
+    
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Counting days"
+    },
+    "icons": {
+        "16": "grey_on_white_clock.png",
+        "48": "grey_on_white_clock.png",
+        "128": "grey_on_white_clock.png"
+    },
+    "background": {
+        "service_worker": "js/background.js",
+        "type": "module"
+    },
+    "permissions": [
+        "storage",
+        "activeTab"
+    ]
+}
